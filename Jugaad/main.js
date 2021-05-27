@@ -86,9 +86,9 @@ function addItem(name,price){
      p.innerHTML='Price : '+price;
 
         item.appendChild(n);
-        item.appendChild(p);
+          item.appendChild(p);
 }
-
+window.onload(fetchData());
 //
 // messagesRef.get().then((snapshot) => {
 //   console.log(snapshot.docs);
