@@ -1,0 +1,58 @@
+body{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-family: Arial;
+}
+.container{
+  display: flex;
+}
+.buyer{
+  align-items: center;
+  height: 100%;
+  width:50%;
+}
+.seller{
+  height: 100%;
+  width:50%;
+}
+img{
+  margin-top: : 100px;
+  height: 250px;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.text{
+  padding-left: 50px;
+  padding-right: 50px;
+  align-items: center;
+}
+h4{
+  margin-top: 30px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.space{
+  height: 60px;
+}
+
+.btn{
+    width: 150px;
+    background-color: #a17bd1;
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 49px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 30px;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+}

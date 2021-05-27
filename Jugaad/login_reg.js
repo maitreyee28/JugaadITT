@@ -2,7 +2,7 @@ const sign_in_btn = document.querySelector("#sign-in-btn");
 const sign_up_btn = document.querySelector("#sign-up-btn");
 const container = document.querySelector(".container");
 //const sign_up_otp = document.querySelector("#signup");
-
+  // console.log("hello");
 sign_up_btn.addEventListener("click", () => {
   container.classList.add("sign-up-mode");
 });
@@ -10,6 +10,7 @@ sign_up_btn.addEventListener("click", () => {
 sign_in_btn.addEventListener("click", () => {
   container.classList.remove("sign-up-mode");
 });
+
 
 /*document.getElementById("signup").addEventListener("click", myFunction);
   function myFunction() {
@@ -20,4 +21,3 @@ sign_in_btn.addEventListener("click", () => {
   location.href = "otp.html";
   console.log(location.href);
   };*/
-

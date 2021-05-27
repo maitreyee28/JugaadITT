@@ -1,0 +1,95 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #eee;
+  padding: 0 16px;
+}
+nav{
+  background-color:#ffd9e2;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+nav h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+nav img {
+  height: 25px;
+  width:25px;
+  padding: 0px;
+}
+.elements {
+  margin-top: 70px;
+  height: 100px;
+  width:100px;
+  align-items: center;
+}
+td {
+  text-align: center;
+}
+
+.elements:hover{
+  border-radius:50%;
+  border: 10px solid #a17bd1;
+  width: 110px;
+  height: 110px;
+}
+
+.nav-link {
+  padding:0px;
+  height:25px;
+  width:25px;
+}
+h3 {
+  margin-top: 70px;
+}
+.about_us {
+  margin: 30px auto;
+  height: 120px;
+  width:120px;
+  align-items: center;
+  /* padding: 100px */
+  /* text-align: left; */
+}
+.A {
+  width: 50%;
+  margin: 100px auto;
+  text-align: right;
+  line-height: 2;
+
+}
+.B {
+  width: 50%;
+  margin:100px auto;
+  line-height: 2;
+  text-align: left;
+}
+.C {
+  width: 50%;
+  margin: 100px auto;
+  text-align: right;
+  line-height: 2;
+
+}
+.A img {
+  float:right;
+  margin-left: 30px
+}
+
+.B img {
+  float:left;
+  margin-right: 30px
+}
+
+.C img {
+  float:right;
+  margin-left: 30px
+}
