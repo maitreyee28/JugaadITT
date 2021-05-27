@@ -6,14 +6,8 @@
 <title>Juggad</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 <link rel="stylesheet" href="styles_l2.css">
+<link rel="stylesheet" href="additionalStyle.css">
 
-<link rel='stylesheet' href='css/woocommerce-layout.css' type='text/css' media='all'/>
-<link rel='stylesheet' href='css/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)'/>
-<link rel='stylesheet' href='css/woocommerce.css' type='text/css' media='all'/>
-<link rel='stylesheet' href='css/font-awesome.min.css' type='text/css' media='all'/>
-<link rel='stylesheet' href='style.css' type='text/css' media='all'/>
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:400,500,700%7CRoboto:400,500,700%7CHerr+Von+Muellerhoff:400,500,700%7CQuattrocento+Sans:400,500,700' type='text/css' media='all'/>
-<link rel='stylesheet' href='css/easy-responsive-shortcodes.css' type='text/css' media='all'/>
 </head>
 <body class="archive post-type-archive post-type-archive-product woocommerce woocommerce-page">
 <div id="page">
@@ -34,86 +28,25 @@
       <!-- </div> -->
     </div>
   </nav>
-	<div class="container">
+<div class="heading">
+  <h3>All products</h3>
+</div>
+<div style="height:30px">
 
-		<!-- #masthead -->
-		<div id="content" class="site-content">
-			<div id="primary" class="content-area column full">
-				<main id="main" class="site-main" role="main">
-			<div style="height:40px">
+</div>
 
+<div >
+<li class="items" id="theProducts"></li><br />
 
-
-      </div>
-				<form class="woocommerce-ordering" method="get">
-					<select name="orderby" class="orderby">
-						<option value="menu_order" selected="selected">Default sorting</option>
-						<option value="popularity">Sort by popularity</option>
-						<option value="rating">Sort by average rating</option>
-						<option value="date">Sort by newness</option>
-						<option value="price">Sort by price: low to high</option>
-						<option value="price-desc">Sort by price: high to low</option>
-					</select>
-				</form>
-				<ul class="products">
-
-					<li class= "product">
-					<a href="shop-single.html">
-					<img src="img/buyer.png" alt="">
-					<h3>Cool Fedora</h3>
-					<span class="price"><span class="amount">$34.00</span></span>
-					</a><a href="#" class="button">Get Details</a>
-					</li>
-
-					<li class="product">
-					<a href="shop-single.html">
-					<img src="http://s3.amazonaws.com/caymandemo/wp-content/uploads/sites/10/2015/09/10175658/j10-520x780-520x600.jpg" alt="">
-					<h3>Beige Blouse</h3>
-					<span class="price"><span class="amount">$66.00</span></span>
-					</a><a href="#" class="button">Get Deatils</a>
-					</li>
-
-					<li class="product">
-					<a href="shop-single.html">
-					<img src="http://s3.amazonaws.com/caymandemo/wp-content/uploads/sites/10/2015/09/10175658/j1-520x780-520x600.jpg" alt="">
-					<h3>Black Jacket</h3>
-					<span class="price"><span class="amount">$125.00</span></span>
-					</a><a href="#" class="button">Get Details</a>
-					</li>
-
-					<li class="last product">
-					<a href="shop-single.html">
-					<img src="http://s3.amazonaws.com/caymandemo/wp-content/uploads/sites/10/2015/09/10175658/j9-520x780-520x600.jpg" alt="">
-					<h3>Brown Jacket</h3>
-					<span class="price"><span class="amount">$28.00</span></span>
-					</a><a href="#" class="button">Get Details</a>
-					</li>
-
-
-				</ul>
-				<!-- <nav class="woocommerce-pagination" style ="margin-left:0px">
-
-				<ul class="page-numbers">
-					<li><span class="page-numbers current">1</span></li>
-					<li><a class="page-numbers" href="#">2</a></li>
-					<li><a class="next page-numbers" href="#">→</a></li>
-				</ul>
-				</nav> -->
-				</main>
-				<!-- #main -->
-			</div>
-			<!-- #primary -->
-		</div>
-		<!-- #content -->
-	</div>
-	<!-- .container -->
-
-	<a href="#top" class="smoothup" title="Back to top"><span class="genericon genericon-collapse"></span></a>
 </div>
 <!-- #page -->
-<script src='js/jquery.js'></script>
-<script src='js/plugins.js'></script>
-<script src='js/scripts.js'></script>
-<script src='js/masonry.pkgd.min.js'></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
+
+
+<script src="main.js"></script>
+
 </body>
 </html>

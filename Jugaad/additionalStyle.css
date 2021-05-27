@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 50rem;
+  margin: 2rem auto;
+
+}
+.heading{
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.items{
+}
+header{
+  width:100%;
+  background: #8d57cf;
+  padding: 1rem;
+}
+header h3{
+  color: #fff;
+  margin-left: 1.5rem;
+}
+.table-users{
+  width: 90%;
+  margin: 2rem auto;
+
+}
+table-users
