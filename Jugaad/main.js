@@ -71,22 +71,54 @@ function fetchData(){
       function(ChildSnapshot){
         let name=ChildSnapshot.val().name;
         let price=ChildSnapshot.val().price;
-        addItem(name,price);
+        let message=ChildSnapshot.val().message;
+        let phone=ChildSnapshot.val().phone;
+        let email=ChildSnapshot.val().email;
+
+        addItem(name,price,message,phone,email);
       }
     )
   })
 }
 
-function addItem(name,price){
+function addItem(name,price,message,phone,email){
   var item=document.getElementById('theProducts');
+  // var name=document.getElementById('sellerName');
      var n=document.createElement('h6');
      var p=document.createElement('p');
+     var d=document.createElement('p');
+     var ph=document.createElement('p');
+     var e=document.createElement('p');
+
 
      n.innerHTML='Product Name : '+name;
      p.innerHTML='Price : '+price;
+     d.innerHTML="Desription : "+message;
+     ph.innerHTML="Ph : "+phone;
+     e.innerHTML="email : "+email;
+     // e1.innerHTML=email;
+     // name.appendChild(e1);
 
-        item.appendChild(n);
-          item.appendChild(p);
+
+     var li=document.createElement('li');
+     var details=document.createElement('div');
+     li.classList.add('product');
+
+     details.appendChild(n);
+     details.appendChild(p);
+     li.appendChild(details);
+     var details2=document.createElement('div');
+     details2.appendChild(d);
+     li.appendChild(details2);
+     var details3=document.createElement('div');
+     details3.appendChild(ph);
+     details3.appendChild(e);
+
+     li.appendChild(details3);
+
+
+     item.appendChild(li);
+
 }
 window.onload(fetchData());
 //

@@ -10,6 +10,13 @@ body{
   align-items: center;
   height: 100%;
   width:50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
 }
 .seller{
   height: 100%;
@@ -51,8 +58,8 @@ h4{
     margin: 10px 0;
     cursor: pointer;
     transition: 0.5s;
-    margin-top: 30px;
-      align-items: center;
-      margin-left: auto;
-      margin-right: auto;
+}
+
+.btn:hover{
+    background-color: #371c59;
 }
