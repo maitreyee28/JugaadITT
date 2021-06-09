@@ -15,8 +15,8 @@
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Jugaad</a>
         <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-light" type="submit"><i class="fas fa-search"></i></button>
+          <input class="form-control me-2" type="text" placeholder="Search" onkeyup="search_product()" id="searchBar" aria-label="Search">
+          <button class="btn btn-outline-light" type="button" id="search-button" ><i class="fas fa-search"></i></button>
         </form>
         <!-- <div class="nav-item">
           <a href="dash.html">Sell on Jugaad!</a>
@@ -35,19 +35,23 @@
 
 </div>
 
-<div class="items">
-<ul id="theProducts">
+<table id="theProducts">
+  <tr id="tr-top">
+    <th>PRODUCT NAME</td>
+    <th>PRICE</td>
+    <th>DESC.</td>
+    <th>PHN</td>
+    <th>EMAIL</td>
+  </tr>
+</table>
 
-</ul>
-
-</div>
 <!-- #page -->
 <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
 
-
+<script src="search.js"></script>
 <script src="main.js"></script>
 
 </body>

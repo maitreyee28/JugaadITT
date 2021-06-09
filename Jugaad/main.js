@@ -91,30 +91,34 @@ function addItem(name,price,message,phone,email){
      var e=document.createElement('p');
 
 
-     n.innerHTML='Product Name : '+name;
-     p.innerHTML='Price : '+price;
-     d.innerHTML="Desription : "+message;
-     ph.innerHTML="Ph : "+phone;
-     e.innerHTML="email : "+email;
+     n.innerHTML=name;
+     p.innerHTML="Rs . " + price;
+     d.innerHTML=message;
+     ph.innerHTML=phone;
+     e.innerHTML=email;
      // e1.innerHTML=email;
      // name.appendChild(e1);
 
 
-     var li=document.createElement('li');
-     var details=document.createElement('div');
+     var li=document.createElement('tr');
      li.classList.add('product');
-
-     details.appendChild(n);
-     details.appendChild(p);
-     li.appendChild(details);
-     var details2=document.createElement('div');
-     details2.appendChild(d);
+     var details1=document.createElement('td');
+     details1.appendChild(n);
+     details1.classList.add('check');
+     var details2=document.createElement('td');
+     details2.appendChild(p);
+     li.appendChild(details1);
      li.appendChild(details2);
-     var details3=document.createElement('div');
-     details3.appendChild(ph);
-     details3.appendChild(e);
-
+     var details3=document.createElement('td');
+     details3.appendChild(d);
      li.appendChild(details3);
+     var details4=document.createElement('td');
+     details4.appendChild(ph);
+     li.appendChild(details4);
+     var details5=document.createElement('td');
+     details4.appendChild(e);
+     li.appendChild(details5);
+     li.classList.add('product');
 
 
      item.appendChild(li);
